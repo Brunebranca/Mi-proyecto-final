@@ -1,0 +1,184 @@
+/*home*/
+.contenedor-main .subtitulo {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #4F5252;
+  color: white;
+  letter-spacing: 2px;
+  width: 100%;
+  margin: auto;
+  padding: 10%; }
+
+.contenedor-main .modelos {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 25px; }
+  .contenedor-main .modelos .modelouno {
+    height: 500px; }
+  .contenedor-main .modelos .modelodos {
+    height: 500px; }
+  .contenedor-main .modelos .modelotres {
+    height: 500px; }
+  .contenedor-main .modelos .catalogo {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    size: 50px;
+    background-color: #FFC4C4; }
+  .contenedor-main .modelos .contenedor-mas-vendido {
+    padding: 25px; }
+    .contenedor-main .modelos .contenedor-mas-vendido .contenedor-lista-ordenada {
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+      background-color: #FFC4C4;
+      text-align: center;
+      font-style: oblique; }
+
+/*micuenta*/
+.contenedor-formulario {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: auto;
+  font-weight: bold; }
+
+.contenedor-formulario-texto {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: auto;
+  font-weight: bold; }
+
+.contenedor-fieldset {
+  padding: 20px;
+  margin: 20px;
+  color: #4F5252; }
+  .contenedor-fieldset .contenedor-form {
+    color: black;
+    font-weight: bold; }
+    .contenedor-fieldset .contenedor-form .contenedor-input {
+      background-color: white;
+      color: black;
+      font-weight: bold; }
+
+/*productos*/
+.contenedor-stock {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: auto;
+  font-weight: bold; }
+
+.contenedor-modelos {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  margin: 10px;
+  padding: 10px;
+  justify-items: center; }
+  .contenedor-modelos .modelouno {
+    height: 500px; }
+  .contenedor-modelos .modelodos {
+    height: 500px; }
+  .contenedor-modelos .modelotres {
+    height: 500px; }
+  .contenedor-modelos .modelocuatro {
+    height: 500px; }
+  .contenedor-modelos .modelocinco {
+    height: 500px; }
+  .contenedor-modelos .modeloseis {
+    height: 500px; }
+  .contenedor-modelos .modelosiete {
+    height: 500px; }
+  .contenedor-modelos .modeloocho {
+    height: 500px; }
+  .contenedor-modelos .modelonueve {
+    height: 500px; }
+
+/*valoracion*/
+.contenedor-tabla {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  background-color: #FFC4C4; }
+  .contenedor-tabla .subcontenedor-tabla {
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff; }
+    .contenedor-tabla .subcontenedor-tabla tr {
+      color: white; }
+    .contenedor-tabla .subcontenedor-tabla .contenedor-nombres {
+      color: white;
+      font-weight: bold;
+      text-align: center; }
+    .contenedor-tabla .subcontenedor-tabla td {
+      padding: 10px;
+      margin: 10px;
+      text-align: center; }
+
+.contenedor-comentarios {
+  margin: 35px;
+  text-align: center; }
+  .contenedor-comentarios .contenedor-texto {
+    font-weight: bold; }
+
+/*todo*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: #FFC4C4;
+  font-family: 'Montserrat', sans-serif; }
+
+.body {
+  background-color: #FFC4C4; }
+
+.contenedor-header {
+  width: 90%;
+  margin: auto; }
+
+footer {
+  display: inline-block;
+  width: 280px;
+  background-color: #FFC4C4;
+  padding: 20px; }
+  footer .mail {
+    background-color: #FFC4C4; }
+  footer .contenedor-gmail {
+    display: flex;
+    align-items: flex-end; }
+  footer .contenedor-facebook {
+    display: flex;
+    align-items: flex-end; }
+  footer .contenedor-instagram {
+    display: flex;
+    align-items: flex-end; }
+
+.contenedor-main-valoracion {
+  display: grid;
+  grid-template-columns: repeat(3, auto); }
+
+@media screen and (max-width: 480px) {
+  /*index*/
+  .modelos {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "modelouno" "modelodos" "modelotres" "catalogo"; }
+  /*valoraciones*/
+  .contenedor-main-valoracion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "contenedor-tabla" "contenedor-texto" "contenedor-comentarios"; }
+  /*productos*/
+  .contenedor-modelos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, auto);
+    grid-template-areas: "modelouno" "modelodos" "modelotres" "modelocuatro" "modelocinco" "modeloseis" "modelosiete" "modeloocho" "modelonueve"; } }
