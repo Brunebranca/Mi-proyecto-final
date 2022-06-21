@@ -14,8 +14,9 @@ $color: #FFC4C4;
     font-family: 'Montserrat', sans-serif;
 }
 
-.body {
+body {
     background-color: $color;
+    overflow-x: hidden;
 }
 
 .contenedor-header {

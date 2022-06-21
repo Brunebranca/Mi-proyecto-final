@@ -156,8 +156,9 @@
   background-color: #FFC4C4;
   font-family: 'Montserrat', sans-serif; }
 
-.body {
-  background-color: #FFC4C4; }
+body {
+  background-color: #FFC4C4;
+  overflow-x: hidden; }
 
 .contenedor-header {
   width: 90%;
