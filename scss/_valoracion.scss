@@ -33,3 +33,16 @@ $color: #FFC4C4;
         font-weight: bold;
     }
 }
+@media screen and (max-width:480px) {
+
+    .contenedor-main-valoracion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "contenedor-tabla"
+            "contenedor-texto"
+            "contenedor-comentarios";
+    }
+}
+

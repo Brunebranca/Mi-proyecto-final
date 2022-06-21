@@ -48,3 +48,16 @@ $color: #FFC4C4;
         }
     }
 }
+@media screen and (max-width:480px) {
+
+    .modelos {
+        display: flex;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "modelouno"
+            "modelodos"
+            "modelotres"
+            "catalogo";
+    }
+}

@@ -55,3 +55,21 @@
         @include modelo
     }
 }
+
+@media screen and (max-width:480px) {
+.contenedor-modelos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, auto);
+    grid-template-areas:
+        "modelouno"
+        "modelodos"
+        "modelotres"
+        "modelocuatro"
+        "modelocinco"
+        "modeloseis"
+        "modelosiete"
+        "modeloocho"
+        "modelonueve";
+}
+}
