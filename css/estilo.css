@@ -35,7 +35,7 @@
       text-align: center;
       font-style: oblique; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
   .modelos {
     display: flex;
     grid-template-columns: 1fr;
@@ -106,7 +106,7 @@
   .contenedor-modelos .modelonueve {
     height: 500px; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
   .contenedor-modelos {
     display: grid;
     grid-template-columns: 1fr;
@@ -141,7 +141,7 @@
   .contenedor-comentarios .contenedor-texto {
     font-weight: bold; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
   .contenedor-main-valoracion {
     display: grid;
     grid-template-columns: 1fr;
