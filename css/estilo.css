@@ -40,7 +40,10 @@
     display: flex;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "modelouno" "modelodos" "modelotres" "catalogo"; } }
+    grid-template-areas: "modelouno"
+"modelodos"
+"modelotres"
+"catalogo"; } }
 
 /*micuenta*/
 .contenedor-formulario {
@@ -111,7 +114,15 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(11, auto);
-    grid-template-areas: "modelouno" "modelodos" "modelotres" "modelocuatro" "modelocinco" "modeloseis" "modelosiete" "modeloocho" "modelonueve"; } }
+    grid-template-areas: "modelouno"
+"modelodos"
+"modelotres"
+"modelocuatro"
+"modelocinco"
+"modeloseis"
+"modelosiete"
+"modeloocho"
+"modelonueve"; } }
 
 /*valoracion*/
 .contenedor-tabla {
@@ -146,7 +157,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "contenedor-tabla" "contenedor-texto" "contenedor-comentarios"; } }
+    grid-template-areas: "contenedor-tabla"
+"contenedor-texto"
+"contenedor-comentarios"; } }
 
 /*todo*/
 * {
