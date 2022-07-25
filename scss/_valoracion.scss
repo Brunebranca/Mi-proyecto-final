@@ -1,5 +1,13 @@
 /*valoracion*/
 $color: #FFC4C4;
+.contenedor-valoracion {
+    width: 100%;
+    margin-top: 30px;
+}
+.subcontenedor-valoracion {
+    width: 90%;
+    margin: auto;
+}
 .contenedor-tabla {
     margin: auto;
     padding: auto;
@@ -26,16 +34,32 @@ $color: #FFC4C4;
     }
 }
 
+.contenedor-comentarios textarea {
+    max-height: 300px;
+    height: 200px;
+    width: 500px;
+}
 .contenedor-comentarios {
     margin: 35px;
     text-align: center;
+    label {
+        display: block;
+    }
     .contenedor-texto {
         font-weight: bold;
     }
 }
+.imagen-valoracion img {
+    display: block;
+    margin: 30px auto;
+}
+.opiniones{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
 @media screen and (max-width:300px) {
 
-    .contenedor-main-valoracion {
+    .opiniones {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);

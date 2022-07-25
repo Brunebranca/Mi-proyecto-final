@@ -1,63 +1,195 @@
 /*home*/
 $color: #FFC4C4;
-.contenedor-main{
+
+.contenedor-main {
+    background-color: #212121;
+
     .subtitulo {
         font-family: 'Nunito', sans-serif;
         text-align: center;
         line-height: 1.5;
-        background-color: #4F5252;
-        color: white;
+        color: $color;
         letter-spacing: 2px;
         width: 100%;
         margin: auto;
         padding: 10%;
     }
-    
-    .modelos {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        gap: 25px;
-        .modelouno {
-            height: 500px;
+}
+
+.modelos {
+    width: 100%;
+
+    .subcontenedor-modelos {
+        width: 90%;
+        height: 60vh;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .imagenes-modelos {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex: 3;
+    }
+
+    .modeloUno,
+    .modeloDos,
+    .modeloTres {
+        flex: 1;
+        margin-right: 30px;
+    }
+
+    .modeloUno {
+        background-image: url('../img/modelo\ 1.jpg');
+        background-size: cover;
+        background-position: top;
+    }
+
+    .modeloDos {
+        background-size: cover;
+        background-position: top;
+        background-image: url('../img/modelo\ 2.jpg');
+    }
+
+    .modeloTres {
+        background-size: cover;
+        background-position: top;
+        background-image: url('../img/modelo\ 3.jpg');
+    }
+
+    .contenedor-mas-vendido {
+        padding: 25px;
+        width: 100%;
+        align-items: center;
+        margin: auto;
+        display: block;
+        flex: 1;
+
+        .subcontenedor-vendido {
+            margin: auto;
+            display: block;
         }
-        
-        .modelodos {
-            height: 500px;
-        }
-        
-        .modelotres {
-            height: 500px;
-        }
-        .catalogo {
-            font-family: 'Montserrat', sans-serif;
+
+        .contenedor-lista {
             text-align: center;
-            size: 50px;
-            background-color:$color;
-        }
-        
-        .contenedor-mas-vendido {
-            padding: 25px;
-            .contenedor-lista-ordenada {
-                text-align: center;
-                list-style: none;
-                text-decoration: none;
-                background-color: $color;
-                text-align: center;
-                font-style: oblique;
+            list-style: none;
+            text-decoration: none;
+            text-align: center;
+            font-style: oblique;
+
+            li {
+                font-size: 25px;
             }
         }
     }
-}
-@media screen and (max-width:300px) {
 
+    .catalogo {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 35px;
+        background-color: $color;
+    }
+}
+
+ol,
+ul {
+    padding-left: 0;
+}
+
+@media screen and (max-width: 1300px) {
     .modelos {
-        display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-            "modelouno"
-            "modelodos"
-            "modelotres"
-            "catalogo";
+        .contenedor-mas-vendido {
+            .contenedor-lista {
+                li {
+                    font-size: 18px
+                }
+            }
+        }
+
+        .catalogo {
+            font-size: 28px
+        }
+    }
+}
+
+@media screen and (max-width: 958px) {
+    .modelos {
+        .subcontenedor-modelos {
+            height: 90vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .imagenes-modelos {
+            flex-direction: row;
+            flex: 2;
+        }
+
+        .modeloUno,
+        .modeloDos {
+            flex: 1;
+            margin-right: 30px;
+        }
+
+        .modeloTres {
+            margin: 0;
+        }
+
+        .contenedor-mas-vendido {
+            flex: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .modelos {
+
+        .modeloUno,
+        .modeloDos {
+            margin-right: 15px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .modelos {
+        height: auto;
+
+        .subcontenedor-modelos {
+            height: 180vh;
+        }
+
+        .imagenes-modelos {
+            flex-direction: column;
+            flex: 4;
+        }
+
+        .modeloUno,
+        .modeloDos,
+        .modeloTres {
+            flex: auto;
+            width: 50%;
+            margin: auto;
+        }
+
+        .modeloUno {
+            background-position: center;
+        }
+
+        .modeloDos {
+            background-position: center;
+        }
+
+        .modeloTres {
+            background-position: center;
+        }
+
+        .contenedor-mas-vendido {
+            flex: 1;
+        }
     }
 }

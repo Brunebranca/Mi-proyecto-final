@@ -7,51 +7,92 @@ $color: #FFC4C4;
 
 /*todo*/
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: $color;
     font-family: 'Montserrat', sans-serif;
 }
-
 body {
-    background-color: $color;
     overflow-x: hidden;
 }
-
 .contenedor-header {
+    border-top: 2px solid $color;
+    border-bottom: 2px solid $color;
+}
+.subcontenedor-header {
     width: 90%;
     margin: auto;
 }
-@mixin mail {
+.container {
     display: flex;
-        align-items: flex-end
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar {
+    padding: 0;
+}
+.navbar-expand-lg {
+    width: 100%;
+}
+.navbar-collapse {
+    display: flex;
+}
+.navbar-nav {
+    margin: auto;
+}
+.navbar-nav li {
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    border: 1px solid #ffc4c400;
+    border-radius: 10px;
+}
+.navbar-nav li a{
+    padding: 10px;
+    border: 1px solid #ffc4c400;
+    border-radius: 10px;
+}
+.navbar-nav li a:hover {
+    border: 1px solid #ffc4c4;
+    transition: .2s;
+}
+.navbar-toggler {
+    background-color: $color;
+    span {
+        background-color: #FFC4C4;
+    }
+}
+.container-fluid {
+    padding: 0;
 }
 footer {
     display: inline-block;
-    width: 280px;
+    width: 100%;
     background-color: $color;
     padding: 20px;
-
-    .mail {
-        background-color: $color ;
+    height: auto;
+    .subcontenedor-footer {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        div {
+            img, p {
+                display: block;
+                margin: auto;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 700;
+            }
+            p{
+                margin-top: 15px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
     }
-
-    .contenedor-gmail {
-    @include mail()
-    }
-
-    .contenedor-facebook {
-    @include mail()
-    }
-
-    .contenedor-instagram {
-    @include mail()
-    }
-}
-
-.contenedor-main-valoracion {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
 }
 

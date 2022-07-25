@@ -1,13 +1,13 @@
 
 /*productos*/
-.contenedor-stock {
-    font-family: 'Nunito', sans-serif;
+.titulo-stock {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     line-height: 1.5;
     letter-spacing: 2px;
-    margin: auto;
-    font-weight: bold
-    
+    width: auto;
+    padding: 50px;
+    background-color: #FFC4C4;
 }
 @mixin modelo {
     height: 500px;
@@ -55,8 +55,11 @@
         @include modelo
     }
 }
-
-@media screen and (max-width:300px) {
+/*
+OTRO MEDIA 1200PX, 
+2 COLUMNAS
+*/
+@media screen and (max-width:800px) {
 .contenedor-modelos {
     display: grid;
     grid-template-columns: 1fr;
