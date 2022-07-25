@@ -309,9 +309,9 @@ OTRO MEDIA 1200PX,
     width: 100%; }
   .contenedor-tabla {
     width: 70%;
-    margin: 10px;
+    margin: auto;
     display: flex;
-    justify-content: center; }
+    justify-content: space-around; }
   .contenedor-comentarios textarea {
     margin: 20px;
     width: 300px;
