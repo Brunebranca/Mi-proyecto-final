@@ -278,7 +278,8 @@ OTRO MEDIA 1200PX,
 
 .contenedor-comentarios {
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
   .contenedor-comentarios label {
     display: block; }
   .contenedor-comentarios .contenedor-texto {
@@ -289,7 +290,7 @@ OTRO MEDIA 1200PX,
   display: flex;
   margin: 30px auto;
   flex: 1;
-  width: 90%;
+  width: 50%;
   display: block;
   align-self: center; }
 
@@ -304,7 +305,10 @@ OTRO MEDIA 1200PX,
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "contenedor-tabla" "contenedor-texto" "contenedor-comentarios" "imagen-valoracion"; }
   .imagen-valoracion {
-    height: auto; } }
+    height: auto;
+    width: 100%; }
+  .contenedor-tabla {
+    width: 70%; } }
 
 /*todo*/
 * {
